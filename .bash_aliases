@@ -1,4 +1,5 @@
 alias v="vim"
+alias pi="ping google.com"
 alias vimedit="vim ~/.vimrc"
 alias pull="git pull"
 alias push="git push"
