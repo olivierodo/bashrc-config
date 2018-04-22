@@ -16,3 +16,5 @@ export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+
+shopt -s cdspell
