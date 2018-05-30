@@ -1,4 +1,4 @@
 bashrc-config
 =============
 
-Keazz's Config Bashrc
+Olivierodo's Config Bashrc
