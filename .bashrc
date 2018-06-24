@@ -12,3 +12,6 @@ fi
 # User specific aliases and functions
 stty ixany
 stty ixoff -ixon
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
