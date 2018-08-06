@@ -2,6 +2,9 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 ulimit -n 1024
 
 bin d-r '\C-s'
