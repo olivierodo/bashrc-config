@@ -7,7 +7,7 @@ export EDITOR="$VISUAL"
 
 ulimit -n 1024
 
-bin d-r '\C-s'
+#bin d-r '\C-s'
 stty -ixon
 
 function parse_git_branch () {
@@ -21,3 +21,4 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 
 shopt -s cdspell
+PATH=~/bin:/usr/local/git/bin:~/Library/Python/2.7/bin:$PATH
