@@ -10,4 +10,4 @@ done
 
 name=${PWD##*/}
 
-docker run --name ${name} -v $(pwd):/usr/src/app ${port} -it node bash
+docker run --name ${name} -v $(pwd):/usr/src/app --workdir /usr/src/app ${port} -it node:12 bash
