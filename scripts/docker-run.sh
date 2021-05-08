@@ -1,13 +1,17 @@
 #!/bin/bash
 
+port=""
 while getopts "p:" arg; do
   case $arg in
     p)
-      port="-p $OPTARG"
+      for I  in "$OPTARG"
+      do
+        port="-p $I $port"
+      done
       ;;
   esac
 done
 
 name=${PWD##*/}
 
-docker run --name ${name} -v $(pwd):/usr/src/app --workdir /usr/src/app ${port} -it node:12 bash
+docker run --name ${name} -v $(pwd):$(pwd) --workdir $(pwd) ${port} -it node:12 bash
